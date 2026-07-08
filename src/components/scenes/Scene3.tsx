@@ -31,11 +31,26 @@ export function Scene3() {
         </div>
 
         {/* Career start */}
-        <FadeIn delay={0.5} duration={0.8}>
-          <p className="text-lg md:text-xl font-sans text-zinc-600 font-light">
-            I started my career in the tourism industry.
-          </p>
-        </FadeIn>
+        <div className="space-y-4 text-center max-w-2xl">
+          <FadeIn delay={0.5} duration={0.8}>
+            <p className="text-lg md:text-xl font-sans text-zinc-600 font-light">
+              In <span className="font-semibold text-zinc-950">2016</span>, I started my career in the tourism industry in the Andaman Islands.
+            </p>
+          </FadeIn>
+          
+          <FadeIn delay={0.6} duration={0.8}>
+            <div className="text-sm font-sans text-zinc-500 leading-relaxed">
+              I had the privilege of working with leading hospitality and travel brands:
+              <div className="flex flex-wrap justify-center gap-1.5 mt-3">
+                {["TSG", "Faraway Tree", "MakeMyTrip", "Yatra", "Thomas Cook"].map((brand) => (
+                  <span key={brand} className="font-semibold text-zinc-900 bg-zinc-100/80 border border-zinc-200 px-2.5 py-1 rounded-lg text-xs tracking-wide">
+                    {brand}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+        </div>
 
         {/* Roles/Capabilities Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 w-full max-w-3xl">

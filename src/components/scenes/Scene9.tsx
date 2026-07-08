@@ -11,12 +11,12 @@ export function Scene9() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative bg-white text-black px-4 md:px-6 py-16 md:py-24 overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center relative bg-white text-black px-4 md:px-6 py-12 sm:py-16 md:py-24 overflow-hidden">
       
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.015)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
-      <div className="z-10 w-full max-w-4xl mx-auto flex flex-col items-center space-y-10 md:space-y-12 text-center">
+      <div className="z-10 w-full max-w-4xl mx-auto flex flex-col items-center justify-center my-auto space-y-10 md:space-y-12 text-center">
         
         {/* Title */}
         <div className="space-y-3">
@@ -34,17 +34,17 @@ export function Scene9() {
         </div>
 
         {/* Chronological descending flow of metrics */}
-        <div className="flex flex-col items-center space-y-5 md:space-y-6 w-full max-w-xl">
+        <div className="flex flex-col items-center space-y-5 md:space-y-6 w-full max-w-xl mx-auto">
           {metrics.map((metric, i) => (
             <div key={metric.label} className="flex flex-col items-center w-full">
               {i > 0 && (
-                <FadeIn delay={i * 0.1 + 0.1} duration={0.4}>
+                <FadeIn delay={i * 0.1 + 0.1} duration={0.4} className="w-full flex justify-center">
                   <div className="text-amber-500 text-sm my-1 font-semibold">↓</div>
                 </FadeIn>
               )}
               
-              <FadeIn delay={i * 0.1 + 0.2} duration={0.6}>
-                <div className="flex flex-col items-center px-4 py-4 bg-zinc-50 border border-zinc-100 rounded-2xl w-72 sm:w-96 shadow-sm hover:shadow-md transition-shadow">
+              <FadeIn delay={i * 0.1 + 0.2} duration={0.6} className="w-full flex justify-center">
+                <div className="flex flex-col items-center px-4 py-4 bg-zinc-50 border border-zinc-100 rounded-2xl w-72 sm:w-96 shadow-sm hover:shadow-md transition-shadow text-center">
                   <span className="font-mono text-[9px] md:text-[10px] text-zinc-400 uppercase tracking-widest mb-1.5 block">
                     {metric.label}
                   </span>

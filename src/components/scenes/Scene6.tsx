@@ -3,14 +3,14 @@ import { FadeIn } from '../ui/FadeIn';
 export function Scene6() {
   const steps = [
     { text: "I moved from the Andaman Islands to Chennai.", delay: 0.4 },
-    { text: "I joined Promanage.biz.", delay: 0.6 },
-    { text: "Here, I experienced enterprise digital marketing for the first time.", delay: 0.8 },
+    { text: "In 2022, I joined Promanage.biz.", delay: 0.6 },
+    { text: "Here, I managed Local SEO, Google Business Profiles at scale, and high-impact digital campaigns.", delay: 0.8 },
     { 
-      text: "I worked with brands like DHL, Mia by Tanishq, Mahindra Finance, and Manappuram Finance.", 
+      text: "I drove local visibility, Google maps optimization, targeted digital campaigns, and search rankings for enterprise brands like DHL, Mia by Tanishq, Mahindra Finance, and Manappuram Finance.", 
       delay: 1.0, 
       highlight: true 
     },
-    { text: "I learned how large organizations approach digital growth.", delay: 1.2 },
+    { text: "Handling thousands of store listings taught me how large organizations approach digital growth.", delay: 1.2 },
     { text: "That experience prepared me for what came next.", delay: 1.4 }
   ];
 

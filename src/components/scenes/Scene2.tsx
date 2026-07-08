@@ -101,7 +101,7 @@ export function Scene2() {
         <FadeIn delay={1.8} duration={0.8}>
           <div className="pt-6">
             <p className="text-base md:text-lg font-sans text-zinc-600 max-w-xl">
-              I studied BBA Tourism at Jawaharlal Rajkeeya Maha Vidyalaya (JNRM). <br />
+              I studied BBA Tourism at Jawaharlal Rajkeeya Maha Vidyalaya (JNRM), Port Blair. <br />
               <span className="font-semibold text-black">But my real classroom was the internet.</span>
             </p>
           </div>
