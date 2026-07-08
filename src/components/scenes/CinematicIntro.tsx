@@ -138,48 +138,50 @@ export function CinematicIntro() {
 
 
         {/* Cinematic Subtitles / Narrative Container */}
-        <div className="relative z-10 w-full max-w-4xl px-4 md:px-8 text-center select-none pointer-events-none">
-          
-          {/* Stage 1: Every journey starts somewhere. */}
-          <motion.div style={{ opacity: op1, y: y1, visibility: vis1 }} className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="text-2xl md:text-5xl lg:text-6xl font-display font-light tracking-wide text-white/90 leading-relaxed">
-              Every journey <br />
-              <span className="font-semibold text-white">starts somewhere.</span>
-            </h1>
-          </motion.div>
+        <div className="absolute inset-0 z-10 flex items-center justify-center px-4 md:px-8 pointer-events-none">
+          <div className="relative w-full max-w-4xl h-[40vh] flex items-center justify-center text-center select-none">
+            
+            {/* Stage 1: Every journey starts somewhere. */}
+            <motion.div style={{ opacity: op1, y: y1, visibility: vis1 }} className="absolute inset-0 flex flex-col items-center justify-center">
+              <h1 className="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-display font-light tracking-wide text-white/90 leading-relaxed px-4">
+                Every journey <br />
+                <span className="font-semibold text-white">starts somewhere.</span>
+              </h1>
+            </motion.div>
 
-          {/* Stage 2: Mine began on a small island. */}
-          <motion.div style={{ opacity: op2, y: y2, visibility: vis2 }} className="absolute inset-0 flex flex-col items-center justify-center">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-light tracking-wider text-zinc-300 leading-relaxed">
-              Mine began on a <br />
-              <span className="font-semibold text-white">small island.</span>
-            </h2>
-          </motion.div>
+            {/* Stage 2: Mine began on a small island. */}
+            <motion.div style={{ opacity: op2, y: y2, visibility: vis2 }} className="absolute inset-0 flex flex-col items-center justify-center">
+              <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-display font-light tracking-wider text-zinc-300 leading-relaxed px-4">
+                Mine began on a <br />
+                <span className="font-semibold text-white">small island.</span>
+              </h2>
+            </motion.div>
 
-          {/* Stage 3: The Andaman Islands. */}
-          <motion.div style={{ opacity: op3, y: y3, visibility: vis3 }} className="absolute inset-0 flex flex-col items-center justify-center">
-            <p className="font-mono text-[10px] tracking-[0.4em] text-amber-500/80 uppercase mb-4">WHERE IT ALL BEGAN</p>
-            <h2 className="text-3xl md:text-6xl lg:text-7xl font-display font-medium tracking-widest text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-              The Andaman Islands.
-            </h2>
-          </motion.div>
+            {/* Stage 3: The Andaman Islands. */}
+            <motion.div style={{ opacity: op3, y: y3, visibility: vis3 }} className="absolute inset-0 flex flex-col items-center justify-center">
+              <p className="font-mono text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.4em] text-amber-500/80 uppercase mb-4">WHERE IT ALL BEGAN</p>
+              <h2 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-display font-medium tracking-widest text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] px-4">
+                The Andaman Islands.
+              </h2>
+            </motion.div>
 
-          {/* Stage 4: A place surrounded by the ocean... but connected to the world through the internet. */}
-          <motion.div style={{ opacity: op4, y: y4, visibility: vis4 }} className="absolute inset-0 flex flex-col items-center justify-center px-4">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-light leading-relaxed text-zinc-300 max-w-3xl">
-              A place surrounded by the ocean... <br />
-              <span className="font-medium text-white">but connected to the world through the internet.</span>
-            </h3>
-          </motion.div>
+            {/* Stage 4: A place surrounded by the ocean... but connected to the world through the internet. */}
+            <motion.div style={{ opacity: op4, y: y4, visibility: vis4 }} className="absolute inset-0 flex flex-col items-center justify-center px-4">
+              <h3 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-display font-light leading-relaxed text-zinc-300 max-w-3xl px-4">
+                A place surrounded by the ocean... <br />
+                <span className="font-medium text-white">but connected to the world through the internet.</span>
+              </h3>
+            </motion.div>
 
-          {/* Stage 5: This is where my story begins. */}
-          <motion.div style={{ opacity: op5, y: y5, visibility: vis5 }} className="absolute inset-0 flex flex-col items-center justify-center max-w-2xl mx-auto px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white tracking-tight mb-4 text-center leading-tight">
-              This is where <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600">my story begins.</span>
-            </h1>
-          </motion.div>
+            {/* Stage 5: This is where my story begins. */}
+            <motion.div style={{ opacity: op5, y: y5, visibility: vis5 }} className="absolute inset-0 flex flex-col items-center justify-center max-w-2xl mx-auto px-4">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white tracking-tight mb-4 text-center leading-tight px-4">
+                This is where <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600">my story begins.</span>
+              </h1>
+            </motion.div>
 
+          </div>
         </div>
 
         {/* Scroll indicator overlay */}

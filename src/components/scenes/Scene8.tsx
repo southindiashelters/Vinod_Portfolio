@@ -138,7 +138,7 @@ export function Scene8() {
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <FadeIn delay={0.1} duration={0.8}>
-            <span className="font-mono text-[10px] tracking-[0.3em] text-amber-500 uppercase bg-amber-500/10 px-3.5 py-1.5 rounded-full inline-block">
+            <span className="font-mono text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.3em] text-amber-500 uppercase bg-amber-500/10 px-4 py-2 rounded-2xl sm:rounded-full inline-block">
               BUILDING REAL SOLUTIONS
             </span>
           </FadeIn>
@@ -159,7 +159,7 @@ export function Scene8() {
             <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest pl-3 mb-2 hidden lg:inline-block">
               SELECT CASE STUDY
             </span>
-            <div className="flex flex-row flex-wrap lg:flex-col gap-2 max-h-[250px] lg:max-h-none overflow-y-auto lg:overflow-visible pb-2 pr-1 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+            <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto pb-4 lg:pb-0 scrollbar-none scroll-smooth snap-x snap-mandatory max-w-full">
               {caseStudies.map((cs) => {
                 const ItemIcon = cs.icon;
                 const isSelected = cs.id === activeId;
@@ -167,7 +167,7 @@ export function Scene8() {
                   <button
                     key={cs.id}
                     onClick={() => setActiveId(cs.id)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-left transition-all duration-300 cursor-pointer w-full md:w-[48%] lg:w-full ${
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-left transition-all duration-300 cursor-pointer shrink-0 snap-center w-[250px] sm:w-[280px] lg:w-full ${
                       isSelected 
                         ? 'bg-amber-500 text-black border-amber-400 shadow-[0_4px_20px_rgba(245,158,11,0.12)] font-semibold' 
                         : 'bg-zinc-900/50 hover:bg-zinc-900 border-zinc-800/80 hover:border-zinc-700 text-zinc-400 hover:text-white'

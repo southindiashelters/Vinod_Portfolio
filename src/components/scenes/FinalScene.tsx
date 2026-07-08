@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { FadeIn } from '../ui/FadeIn';
-import { ArrowRight, Mail, MessageCircle, Sparkles } from 'lucide-react';
+import { ArrowRight, Mail, MessageCircle, Sparkles, Linkedin } from 'lucide-react';
 
 const WHATSAPP_NUMBER = "919679533727"; // User's WhatsApp phone number
 
@@ -87,15 +87,20 @@ I visited your digital portfolio and would love to connect with you regarding di
               </div>
 
               {/* Direct Contact Badges */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-[11px] md:text-xs font-mono text-zinc-400 bg-zinc-900/30 border border-zinc-900/80 px-5 py-3 rounded-2xl w-full max-w-lg">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-4 text-[11px] font-mono text-zinc-400 bg-zinc-900/30 border border-zinc-900/80 px-4 py-3 rounded-2xl w-full max-w-xl">
                 <a href="mailto:vinodkumar@sisestates.com" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
                   <Mail size={13} className="text-amber-500 shrink-0" />
                   <span>vinodkumar@sisestates.com</span>
                 </a>
-                <span className="hidden sm:inline text-zinc-800">|</span>
+                <span className="hidden lg:inline text-zinc-800">|</span>
                 <a href="https://wa.me/919679533727" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-emerald-400 transition-colors">
                   <MessageCircle size={13} className="text-emerald-500 shrink-0" />
                   <span>+91 96795 33727</span>
+                </a>
+                <span className="hidden lg:inline text-zinc-800">|</span>
+                <a href="https://www.linkedin.com/in/vinod-kumar-p-3b0212208/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                  <Linkedin size={13} className="text-blue-400 shrink-0" />
+                  <span>LinkedIn Profile</span>
                 </a>
               </div>
 

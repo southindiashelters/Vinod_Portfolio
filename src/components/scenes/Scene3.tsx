@@ -12,7 +12,7 @@ export function Scene3() {
         {/* Title */}
         <div className="space-y-3">
           <FadeIn delay={0.1} duration={0.8}>
-            <span className="font-mono text-[10px] tracking-[0.3em] text-zinc-400 uppercase bg-zinc-250 px-3.5 py-1.5 rounded-full inline-block">
+            <span className="font-mono text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.3em] text-zinc-400 uppercase bg-zinc-200 px-4 py-2 rounded-2xl sm:rounded-full inline-block">
               LEARNING THROUGH PEOPLE
             </span>
           </FadeIn>
@@ -73,7 +73,7 @@ export function Scene3() {
           </FadeIn>
         </div>
 
-        {/* Digital marketing shift & Rich Dad Poor Dad */}
+        {/* Digital marketing shift */}
         <div className="pt-6 border-t border-zinc-200/60 w-full max-w-xl space-y-4">
           <FadeIn delay={1.6} duration={0.8}>
             <p className="text-sm font-mono text-zinc-500">
@@ -82,16 +82,6 @@ export function Scene3() {
           </FadeIn>
 
           <FadeIn delay={1.8} duration={0.8}>
-            <div className="bg-white p-4 border border-zinc-200 rounded-2xl shadow-sm inline-block px-6">
-              <p className="text-xs font-mono text-zinc-400 mb-1">THE TRIGGER BOOK</p>
-              <p className="font-display text-base md:text-lg font-bold text-zinc-900 italic">
-                Rich Dad Poor Dad.
-              </p>
-              <p className="text-xs text-zinc-500 mt-1">One book changed the way I thought.</p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={2.0} duration={0.8}>
             <p className="text-xl md:text-2xl font-display font-semibold text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-600">
               Dreams became bigger. So did my curiosity.
             </p>

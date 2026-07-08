@@ -5,6 +5,7 @@ export function Scene11() {
     { name: "Google", concept: "Curiosity." },
     { name: "YouTube", concept: "Learning." },
     { name: "Jio", concept: "Access — Sparking India's internet revolution." },
+    { name: "Rich Dad Poor Dad", concept: "Mindset shift — One book changed the way I thought." },
     { name: "ChatGPT", concept: "Unlocking efficiency." },
     { name: "Steve Jobs", concept: "Connect the dots." },
     { 
@@ -39,15 +40,15 @@ export function Scene11() {
         {/* Minimal list of key pairings */}
         <div className="w-full max-w-2xl space-y-6 divide-y divide-zinc-200/60 pt-4">
           {influencers.map((item, idx) => (
-            <div key={item.name} className="pt-6 first:pt-0 flex flex-col md:flex-row md:items-center justify-between gap-2 md:gap-4">
-              <FadeIn delay={0.4 + idx * 0.15} direction="none" duration={0.6}>
-                <span className="font-display text-xl md:text-2xl lg:text-3xl font-bold text-zinc-950">
+            <div key={item.name} className="pt-6 first:pt-0 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-4 items-baseline md:items-center">
+              <FadeIn delay={0.4 + idx * 0.15} direction="none" duration={0.6} className="md:col-span-5">
+                <span className="font-display text-xl md:text-2xl lg:text-3xl font-bold text-zinc-950 block">
                   {item.name}
                 </span>
               </FadeIn>
               
-              <FadeIn delay={0.6 + idx * 0.15} direction="none" duration={0.6}>
-                <span className="font-display text-base md:text-lg lg:text-xl font-light text-zinc-500">
+              <FadeIn delay={0.6 + idx * 0.15} direction="none" duration={0.6} className="md:col-span-7 md:text-right">
+                <span className="font-display text-base md:text-lg lg:text-xl font-light text-zinc-500 block">
                   {item.concept}
                 </span>
               </FadeIn>

@@ -13,7 +13,7 @@ export function Scene2() {
         {/* Title */}
         <div className="space-y-3">
           <FadeIn delay={0.1} duration={0.8}>
-            <span className="font-mono text-[10px] tracking-[0.3em] text-zinc-400 uppercase bg-zinc-100 px-3.5 py-1.5 rounded-full inline-block">
+            <span className="font-mono text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.3em] text-zinc-400 uppercase bg-zinc-100 px-4 py-2 rounded-2xl sm:rounded-full inline-block">
               CURIOSITY CHANGED EVERYTHING
             </span>
           </FadeIn>

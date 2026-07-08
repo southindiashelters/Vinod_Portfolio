@@ -29,7 +29,7 @@ export function Scene7() {
         {/* Title */}
         <div className="space-y-4 text-center">
           <FadeIn delay={0.1} duration={0.8}>
-            <span className="font-mono text-[10px] tracking-[0.3em] text-amber-500 uppercase bg-amber-500/10 px-3.5 py-1.5 rounded-full inline-block">
+            <span className="font-mono text-[9px] sm:text-[10px] tracking-[0.1em] sm:tracking-[0.3em] text-amber-500 uppercase bg-amber-500/10 px-4 py-2 rounded-2xl sm:rounded-full inline-block max-w-full text-center">
               SOUTH INDIA SHELTERS – WHERE EVERYTHING CONNECTED
             </span>
           </FadeIn>
